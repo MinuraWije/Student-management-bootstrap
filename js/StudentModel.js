@@ -1,4 +1,4 @@
-class studentModel{
+ export default class StudentModel{
     constructor(id, firstName, lastName, address, program) {
         this._id =id;
         this._firstName =firstName;
