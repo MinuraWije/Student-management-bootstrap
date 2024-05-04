@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Page</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">IJSE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student.html">Student Mgt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course.html">Course Mgt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+<h1>Course Management</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 right-pane" style="margin-bottom: 0;">
+            <!--<h1>Add Item</h1>-->
+            <form class="row g-3">
+                <div class="col-12">
+                    <label for="Course Id" class="form-label">ID</label>
+                    <input type="number" class="form-control" id="Course Id">
+                </div>
+                <div class="col-12">
+                    <label for="courseName" class="form-label">Course Name</label>
+                    <input type="text" class="form-control" id="courseName">
+                </div>
+                <div class="col-12">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" rows="3" placeholder="Enter your description"></textarea>
+                </div>
+                <!--<div class="col-12">
+                    <label for="Quantity" class="form-label">Order Quantity</label>
+                    <input type="Number" class="form-control" id="Quantity" placeholder="Enter needed quantity">
+                </div>
+                <div class="col-md-4">
+                    <label for="Sub Total" class="form-label">Sub Total</label>
+                    <input type="text" class="form-control" id="Sub Total">
+                </div>-->
+                <!--<div class="col-md-3">
+                    <button type="submit" class="btn btn-success">Add to cart</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-primary">Add to cart</button>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-danger">Add to cart</button>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Add to cart</button>
+                </div>-->
+
+            </form>
+            <div>
+                <button type="button" class="btn btn-success">Submit</button>
+                <button type="button" class="btn btn-primary">Update</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="button" class="btn btn-warning">Reset</button>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-6 table-pane" style="margin-top: 0;">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">Description</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">001</th>
+                    <td>GDSE</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi deleniti enim inventore ipsum magnam.
+                        Debitis esse magnam nobis, officiis omnis perspiciatis possimus quis reiciendis voluptates? Dicta dolore doloribus enim sit?</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">002</th>
+                    <td>DEP</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Consectetur ea fugit labore magnam mollitia nesciunt placeat, quia sunt? Adipisci atque distinctio id ipsam ipsum nemo provident quaerat sequi tenetur ut!</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
